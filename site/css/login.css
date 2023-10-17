@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root{
+	--main-bg-color:#FF87C3;
+	--brown:#A52A2A;
+	--silk:#fff8dc;
+	--blue:#6495ed;
+	--golden:#b8860b;
+	--khaki:#a9a9a9;
+	--green:#006400;
+	--red:#8b0000;
+	--forest:#228b22;
+	--black:#000;
+	--white:#fff;
+	--aliceblue:#f0f8ff;
+}
+
+body{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background-color: var(--aliceblue);
+	font-family: Quicksand;
+}
+.FrmInputs{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.loginFrm{
+	background-color: var(--silk);
+	width: 300px;
+	border-radius: 8px;
+	padding: 20px 40px;
+	box-shadow: 0 10px 20px rgba(90, 99, 105, .5);
+}
+.title{
+	font-family: Lato;
+	font-size: 25px;
+	font-weight: 500;
+	text-align: center;
+	margin: 5px;
+	margin-bottom: 15px;
+}
+.inputs{
+	position: relative;
+	height: 45px;
+	width: 90%;
+	margin-bottom: 15px;
+}
+.inputs input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	border: 1px solid var(--black);
+	border-radius: 8px;
+	font-size: 16px;
+	padding: 0 20px;
+	outline: none;
+	background: none;
+	z-index: 1;
+}
+::placeholder{
+	color: transparent;
+}
+.labels{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	padding: 0 4px;
+	background-color: var(--silk);
+	color: var(--golden);
+	font-size: 14px;
+	transition: .5s;
+	z-index: 0;
+}
+.loginBtn{
+	display: block;
+	margin: auto;
+	padding: 15px 30px;
+	border: none;
+	background-color: salmon;
+	color: snow;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 16px;
+	margin-top: 30px;
+}
+.loginBtn:hover{
+	background-color: var(--forest);
+	transform: translateY(-2px);
+}
+input:focus + .labels{
+	top: -7px;
+	left: 3px;
+	z-index: 10;
+	font-size: 14px;
+	font-weight: 600;
+	color: palegoldenrod;
+}
+input:focus{
+	border: 2px solid purple;
+}
+input:not(:placeholder-shown)+ .labels{
+	top: -7px;
+	left: 3px;
+	z-index: 10;
+	font-size: 14px;
+	font-weight: 600;
+}

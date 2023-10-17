@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root{
+	--main-bg-color:#FF87C3;
+	--brown:#A52A2A;
+	--silk:#fff8dc;
+	--blue:#6495ed;
+	--golden:#b8860b;
+	--khaki:#a9a9a9;
+	--green:#006400;
+	--red:#8b0000;
+	--forest:#228b22;
+	--black:#000;
+	--white:#fff;
+	--aliceblue:#f0f8ff;
+	--graywhite:#C1D8C3;
+	--whiteout:#F1EFEF;
+	--light:#F1EFEF;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: whitesmoke;
+	font-family: Quicksand;
+}
+nav{
+	height: 100vh;
+	width: 150px;
+	background-color: var(--light);
+	position: fixed;
+}
